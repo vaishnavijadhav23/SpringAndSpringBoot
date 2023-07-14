@@ -36,7 +36,7 @@ public class MedicineService {
 	{
 		Integer id = medicine.getId();
 		Medicine m = repo.findById(id).get();
-		m.setMedicinename(medicine.getMedicinename());
+		m.setName(medicine.getName());
 		m.setPrice(medicine.getPrice());
 		return repo.save(m);
 	}	
